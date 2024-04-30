@@ -43,9 +43,9 @@ const config: DocsThemeConfig = {
           "A handbook that teaches you how to build data infrastructure and set up data teams.",
         images: [
           {
-            url: "/public/img/og.png",
-            width: 2939,
-            height: 707,
+            url: "/public/favicon.ico",
+            width: 1200,
+            height: 1200,
             alt: "Bottom Line Data Handbook",
           },
         ],

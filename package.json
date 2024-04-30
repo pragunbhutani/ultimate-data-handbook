@@ -1,7 +1,7 @@
 {
   "name": "bottom-line-data-handbook",
   "version": "0.0.1",
-  "description": "A handbook that teaches you how to build data infrastructure and set up data teams.",
+  "description": "A collection of design principles, strategies and frameworks we use to build data infrastructure and set up data teams.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
