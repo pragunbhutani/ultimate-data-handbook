@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from "tailwindcss/defaultTheme";
+
 module.exports = {
   darkMode: ["class", 'html[class~="dark"]'],
   content: [
@@ -10,6 +13,10 @@ module.exports = {
     // "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         "bld-forest-green": "#1B4546",

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <>
-      <span className="-ml-2 mt-1.5">
+      <span className="-ml-2 flex items-center">
         <span className="hidden dark:inline-block">
           <Image
             // src="/img/light.png"
@@ -30,7 +30,7 @@ export default function Logo() {
             height={40}
           />
         </span>
-        <span className="text-xl ml-2.5 align-top inline-block mt-1.5 text-bld-forest-green dark:text-gray-300 font-semibold">
+        <span className="text-sm xs:text-base sm:text-lg leading-tight md:text-xl ml-2.5 align-top inline-block text-bld-forest-green dark:text-gray-300 font-semibold">
           The <span className="font-serif italic font-light">Ultimate</span>{" "}
           Data Handbook
         </span>
