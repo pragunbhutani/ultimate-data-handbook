@@ -1,5 +1,5 @@
-import Footer from "@components/Footer";
-import Logo from "@components/Logo";
+import Footer from "./components/Footer";
+import Logo from "./components/Logo";
 
 import { DocsThemeConfig } from "nextra-theme-docs";
 
