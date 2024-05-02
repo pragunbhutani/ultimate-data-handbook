@@ -1,6 +1,35 @@
 {
-  "index": "Homepage",
+  "index": {
+    "title": "Home",
+    "theme": {
+      "breadcrumb": false,
+      "toc": false,
+      "pagination": false,
+      "footer": true,
+      "sidebar": true
+    }
+  },
+  "about": {
+    "title": "About",
+    "type": "menu",
+    "items": {
+      "author": {
+        "title": "Pragun Bhutani",
+        "href": "https://pragunbhutani.com"
+      },
+      "company": {
+        "title": "Bottom Line Data Co.",
+        "href": "https://bottomlinedata.co"
+      }
+    }
+  },
   "---": {
     "type": "separator"
+  },
+  "warehouse-design": {
+    "title": "Warehouse Design",
+    "theme": {
+      "typesetting": "raw"
+    }
   }
 }

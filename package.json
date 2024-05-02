@@ -1,5 +1,5 @@
 {
-  "name": "bottom-line-data-handbook",
+  "name": "ultimate-data-handbook",
   "version": "0.0.1",
   "description": "A collection of design principles, strategies and frameworks we use to build data infrastructure and set up data teams.",
   "scripts": {
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pragunbhutani/bottom-line-data-handbook.git"
+    "url": "git+https://github.com/pragunbhutani/ultimate-data-handbook.git"
   },
   "author": "Pragun Bhutani",
   "bugs": {
-    "url": "https://github.com/pragunbhutani/bottom-line-data-handbook/issues"
+    "url": "https://github.com/pragunbhutani/ultimate-data-handbook/issues"
   },
-  "homepage": "https://github.com/pragunbhutani/bottom-line-data-handbook#readme",
+  "homepage": "https://handbook.bottomlinedata.co",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",

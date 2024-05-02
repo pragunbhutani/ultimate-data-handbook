@@ -1,35 +1,36 @@
-import Logo from "./components/logo";
-import Footer from "./components/footer";
+import Footer from "@components/Footer";
+import Logo from "@components/Logo";
 
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: Logo,
-  // project: {
-  //   link: "https://github.com/pragunbhutani/bottom-line-data-handbook",
-  // },
+  project: {
+    link: "https://github.com/pragunbhutani/ultimate-data-handbook",
+  },
   // chat: {
   //   link: "https://discord.com",
   // },
   docsRepositoryBase:
-    "https://github.com/pragunbhutani/bottom-line-data-handbook",
+    "https://github.com/pragunbhutani/ultimate-data-handbook/blob/main",
   footer: {
     component: Footer,
   },
-  editLink: {
-    component: null,
-  },
-  feedback: {
-    content: null,
-  },
+  // editLink: {
+  //   component: null,
+  // },
+  // feedback: {
+  //   content: null,
+  // },
   primaryHue: {
     dark: 72,
     light: 181,
   },
   primarySaturation: {
-    light: 61,
+    light: 35,
     dark: 70,
   },
+  gitTimestamp: false,
   navigation: false,
   useNextSeoProps() {
     return {
@@ -40,7 +41,7 @@ const config: DocsThemeConfig = {
         url: "https://handbook.bottomlinedata.co",
         title: "Bottom Line Data Handbook",
         description:
-          "A handbook that teaches you how to build data infrastructure and set up data teams.",
+          "A collection of design principles, strategies and frameworks we use to build data infrastructure and set up data teams.",
         images: [
           {
             url: "/public/favicon.ico",
