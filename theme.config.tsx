@@ -44,10 +44,11 @@ const config: DocsThemeConfig = {
           "A collection of design principles, strategies and frameworks we use to build data infrastructure and set up data teams.",
         images: [
           {
-            url: "/public/favicon.ico",
+            url: "/public/img/icon-dark.png",
             width: 1200,
             height: 1200,
             alt: "Bottom Line Data Handbook",
+            type: "image/png",
           },
         ],
       },
