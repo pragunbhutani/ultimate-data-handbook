@@ -1,24 +1,18 @@
-import { useConfig } from "nextra-theme-docs";
-
 import cn from "@lib/cn";
 
-export default function Hero() {
-  const { darkMode } = useConfig();
+import { ScaleIcon } from "@heroicons/react/24/outline";
 
+export default function Hero() {
   return (
     <>
       <div className="mx-auto max-w-2xl py-16">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-5 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-300 dark:ring-gray-600">
-            The{" "}
-            <a
-              href="https://bottomlinedata.co"
-              className="font-semibold text-bld-forest-green dark:text-bld-lime-green"
-            >
-              <span className="absolute inset-0" aria-hidden="true" />
-              Bottom Line Data Co.
-            </a>{" "}
-            presents
+            Open Source
+            <a href="https://github.com/pragunbhutani/ultimate-data-handbook/blob/main/LICENSE">
+              <ScaleIcon className="h-4 inline mx-1.5 -mt-1" />
+              MIT License
+            </a>
           </div>
         </div>
         <div className="text-center">

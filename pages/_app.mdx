@@ -1,10 +1,12 @@
 import "../styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export default function MyApp({ Component, pageProps }) {
   return (
-    // <div className="dark:bg-bld-forest-green dark:selection:bg-bld-lime-green">
     <div className="">
       <Component {...pageProps} />
+      <Analytics />
     </div>
   );
 }

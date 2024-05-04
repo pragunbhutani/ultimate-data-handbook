@@ -1,8 +1,5 @@
 {
-  "schemas": {
-    "title": "Layers & Schemas",
-    "theme": {
-      "typesetting": "raw"
-    }
+  "layers": {
+    "title": "Warehouse Layers"
   }
 }

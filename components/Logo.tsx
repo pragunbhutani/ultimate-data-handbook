@@ -1,5 +1,3 @@
-import { useConfig } from "nextra-theme-docs";
-
 import Image from "next/image";
 
 export default function Logo() {

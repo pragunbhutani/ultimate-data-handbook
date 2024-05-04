@@ -10,16 +10,12 @@
     }
   },
   "about": {
-    "title": "About",
+    "title": "Get in touch",
     "type": "menu",
     "items": {
       "author": {
         "title": "Pragun Bhutani",
         "href": "https://pragunbhutani.com"
-      },
-      "company": {
-        "title": "Bottom Line Data Co.",
-        "href": "https://bottomlinedata.co"
       }
     }
   },

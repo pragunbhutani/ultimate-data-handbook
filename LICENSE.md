@@ -1,6 +1,9 @@
 MIT License
 
-Copyright (c) 2022 Shu Ding
+Copyright (c) 2024 [Pragun Bhutani](https://pragunbhutani.com) & [Bottom Line Data LLP](https://bottomlinedata.co)
+
+The Ultimate Data Handbook is built using the [Nextra documentation
+theme](https://github.com/shuding/nextra), Copyright (c) 2020 [Shu Ding](https://shud.in/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -32,7 +32,6 @@ const config: DocsThemeConfig = {
     light: 35,
     dark: 70,
   },
-  gitTimestamp: false,
   navigation: false,
   useNextSeoProps() {
     return {
