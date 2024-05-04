@@ -28,7 +28,7 @@ export default function Logo() {
             height={40}
           />
         </span>
-        <span className="text-sm xs:text-base sm:text-lg leading-tight md:text-xl ml-2.5 align-top inline-block text-bld-forest-green dark:text-gray-300 font-semibold">
+        <span className="text-sm xs:text-base sm:text-lg leading-tight md:text-xl ml-2.5 align-top inline-block text-bld-forest-green dark:text-bld-lime-green font-semibold">
           The <span className="font-serif italic font-light">Ultimate</span>{" "}
           Data Handbook
         </span>
