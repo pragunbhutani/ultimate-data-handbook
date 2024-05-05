@@ -35,13 +35,13 @@ const config: DocsThemeConfig = {
   navigation: false,
   useNextSeoProps() {
     return {
-      titleTemplate: "%s | Bottom Line Data Handbook",
+      titleTemplate: "%s | Ultimate Data Handbook",
       description:
         "A starter guide to help build data infrastructure and set up data teams.",
       openGraph: {
         type: "website",
         url: "https://handbook.bottomlinedata.co",
-        title: "Bottom Line Data Handbook",
+        title: "The Ultimate Data Handbook",
         description:
           "A starter guide to help build data infrastructure and set up data teams.",
         images: [
@@ -49,7 +49,7 @@ const config: DocsThemeConfig = {
             url: darkIcon.src,
             width: 1200,
             height: 1200,
-            alt: "Bottom Line Data Handbook",
+            alt: "Ultimate Data Handbook",
             type: "image/png",
           },
         ],
