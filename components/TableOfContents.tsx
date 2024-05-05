@@ -1,7 +1,7 @@
-export default function TableOfContents({ contents }) {
+export default function TableOfContents({ basePath, contents }) {
   const contentList = Object.keys(contents).map((key) => ({
     title: contents[key],
-    href: `/good-conventions/${key}`,
+    href: `${basePath}/${key}`,
   }));
 
   return (
