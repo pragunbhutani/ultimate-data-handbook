@@ -1,0 +1,9 @@
+{
+  "data-platform": "Data Platform",
+  "data-warehouse": "Data Warehouse",
+  "etl-elt-reverse-etl": "ETL, ELT & Reverse ETL",
+  "product-analytics": "Product Analytics",
+  "data-science-and-ml": "Data Science & ML",
+  "business-intelligence": "Business Intelligence",
+  "data-catalog": "Data Catalog"
+}

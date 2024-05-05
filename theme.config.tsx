@@ -36,13 +36,14 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     return {
       titleTemplate: "%s | Bottom Line Data Handbook",
-      description: "A handbook for data-driven decision making",
+      description:
+        "A starter guide to help build data infrastructure and set up data teams.",
       openGraph: {
         type: "website",
         url: "https://handbook.bottomlinedata.co",
         title: "Bottom Line Data Handbook",
         description:
-          "A collection of design principles, strategies and frameworks we use to build data infrastructure and set up data teams.",
+          "A starter guide to help build data infrastructure and set up data teams.",
         images: [
           {
             url: darkIcon.src,

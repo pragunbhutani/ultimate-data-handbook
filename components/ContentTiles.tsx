@@ -2,32 +2,32 @@ import cn from "@lib/cn";
 
 const contents = [
   {
-    title: "Warehouse Design",
+    title: "Getting Started",
     icon: "✨",
-    href: "/warehouse-design",
+    href: "/getting-started",
+    description:
+      "How to build a data teams and infrastructure from the gtround up.",
+    comingSoon: false,
+  },
+  {
+    title: "Core Concepts",
+    icon: "🧠",
+    href: "/core-concepts",
+    description:
+      "Understand common terms used in data engineering and data science.",
+    comingSoon: false,
+  },
+  {
+    title: "Good Conventions",
+    icon: "👌",
+    href: "/good-conventions",
     description:
       "Design your data so it is easy for humans and LLMs to understand.",
     comingSoon: false,
   },
   {
-    title: "Data Stacks",
-    icon: "🛠️",
-    href: "#",
-    description:
-      "Data stack recommendations for different use cases and teams of different sizes.",
-    comingSoon: true,
-  },
-  {
-    title: "dbt Best Practises",
-    icon: "🔥",
-    href: "#",
-    description:
-      "Get the best out of your analytics engineering stack with dbt.",
-    comingSoon: true,
-  },
-  {
     title: "Managing Data Teams",
-    icon: "👌",
+    icon: "💼",
     href: "#",
     description:
       "Product and Engineering Management to help you build the right things and build things right.",

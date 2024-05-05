@@ -14,18 +14,19 @@
     "type": "menu",
     "items": {
       "author": {
-        "title": "Pragun Bhutani",
+        "title": "About the author",
         "href": "https://pragunbhutani.com"
+      },
+      "request": {
+        "title": "Request a topic",
+        "href": "#"
       }
     }
   },
+  "getting-started": "Getting Started",
   "---": {
     "type": "separator"
   },
-  "warehouse-design": {
-    "title": "Warehouse Design",
-    "theme": {
-      "typesetting": "raw"
-    }
-  }
+  "core-concepts": "Core Concepts",
+  "good-conventions": "Good Conventions"
 }
