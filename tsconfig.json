@@ -21,11 +21,6 @@
       "@public/*": ["./public/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "pages/getting-started/data-platform.mdx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "**/*.json"],
   "exclude": ["node_modules"]
 }
