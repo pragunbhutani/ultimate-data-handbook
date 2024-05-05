@@ -4,7 +4,7 @@ const contents = [
   {
     title: "Getting Started",
     icon: "✨",
-    href: "#",
+    href: "/getting-started",
     description:
       "How to build a data teams and infrastructure from the gtround up.",
     comingSoon: false,
@@ -12,7 +12,7 @@ const contents = [
   {
     title: "Core Concepts",
     icon: "🧠",
-    href: "#",
+    href: "/core-concepts",
     description:
       "Understand common terms used in data engineering and data science.",
     comingSoon: false,
@@ -20,7 +20,7 @@ const contents = [
   {
     title: "Good Conventions",
     icon: "👌",
-    href: "#",
+    href: "/good-conventions",
     description:
       "Design your data so it is easy for humans and LLMs to understand.",
     comingSoon: false,
