@@ -3,14 +3,12 @@ name: New Topic Request
 about: Request for a new topic to be added to the Ultimate Data Handbook
 title: "[TOPIC] Insert suggested topic title here"
 labels: new topic request
-assignees: ''
+assignees: pragunbhutani
 
 ---
 
 **Does this topic come under data management or engineering?**
-[] Engineering
-[] Management
-[] Other - Please Mention:
+Please mention if this topic comes under "Management", "Engineering" or others.
 
 **Describe the challenge you'd like the topic to address?**
 A clear and concise description of what the problem is. Ex. I have a hard time deciding [...]
