@@ -8,7 +8,9 @@ assignees: ''
 ---
 
 **Does this topic come under data management or engineering?**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+[] Engineering
+[] Management
+[] Other - Please Mention:
 
 **Describe the challenge you'd like the topic to address?**
 A clear and concise description of what the problem is. Ex. I have a hard time deciding [...]
