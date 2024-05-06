@@ -18,8 +18,8 @@
         "href": "https://pragunbhutani.com"
       },
       "request": {
-        "title": "Request a topic",
-        "href": "#"
+        "title": "Suggest a topic",
+        "href": "https://github.com/pragunbhutani/ultimate-data-handbook/issues/new?assignees=pragunbhutani&labels=new+topic+request&projects=&template=new-topic-request.md&title=%5BTOPIC%5D+Insert+suggested+topic+title+here"
       }
     }
   },
