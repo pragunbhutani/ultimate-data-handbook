@@ -35,7 +35,7 @@ const contents = [
   },
 ];
 
-export default function ContentTiles() {
+export default function HeroContentTiles() {
   return (
     <>
       <div>
@@ -48,27 +48,43 @@ export default function ContentTiles() {
               <a href={content.href}>
                 <div
                   className={cn(
-                    "border border-gray-200 dark:border-gray-800 p-4 rounded-md flex h-full",
+                    "border border-gray-200 dark:border-gray-800 rounded-md",
                     content.comingSoon
                       ? "opacity-50 cursor-default"
                       : "hover:bg-gray-100 dark:hover:bg-gray-800 hover:cursor-pointer"
                   )}
                 >
-                  <div className="mr-4 text-2xl">{content.icon}</div>
-                  <div className="relative w-full">
-                    {content.comingSoon && (
-                      <p className="absolute text-xs dark:text-gray-300 top-1 right-0">
-                        (Coming Soon)
+                  <div className="p-4 h-full hidden xs:flex">
+                    <div className="mr-4 text-2xl">{content.icon}</div>
+                    <div className="relative w-full">
+                      {content.comingSoon && (
+                        <p className="absolute text-xs dark:text-gray-300 top-1 right-0">
+                          (Coming Soon)
+                        </p>
+                      )}
+
+                      <h3 className="text-lg font-bold dark:text-gray-300 text-gray-700">
+                        {content.title}
+                      </h3>
+
+                      <p className="text-sm mt-1 dark:text-gray-400 text-gray-600">
+                        {content.description}
                       </p>
-                    )}
-
-                    <h3 className="text-lg font-bold dark:text-gray-300 text-gray-700">
-                      {content.title}
-                    </h3>
-
-                    <p className="text-sm mt-1 dark:text-gray-400 text-gray-600">
+                    </div>
+                  </div>
+                  <div className="flex p-4 xs:hidden flex-col">
+                    <div className="flex flex-row">
+                      <div className="mr-2">{content.icon}</div>
+                      <div className="font-bold">{content.title}</div>
+                    </div>
+                    <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
                       {content.description}
-                    </p>
+                    </div>
+                    {content.comingSoon && (
+                      <div className="text-xs text-right mt-2 dark:text-gray-300">
+                        (Coming Soon)
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>

@@ -27,8 +27,9 @@ export default function Hero() {
             <span className="whitespace-nowrap">Data Handbook</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-500 dark:text-gray-400">
-            A collection of design principles, strategies and frameworks we use
-            to build data infrastructure and set up data teams.
+            A collection of design principles, strategies and frameworks for
+            growth stage startups to build data infrastructure and set up data
+            teams.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6"></div>
         </div>
