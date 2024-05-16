@@ -23,10 +23,10 @@
       }
     }
   },
-  "getting-started": "Getting Started",
   "---": {
     "type": "separator"
   },
+  "startup-journey": "Startup Data Journey",
   "core-concepts": "Core Concepts",
   "good-conventions": "Good Conventions"
 }

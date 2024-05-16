@@ -2,11 +2,11 @@ import cn from "@lib/cn";
 
 const contents = [
   {
-    title: "Getting Started",
+    title: "Startup Data Journey",
     icon: "✨",
-    href: "/getting-started",
+    href: "/startup-journey",
     description:
-      "How to build a data teams and infrastructure from the gtround up.",
+      "Follow the journey of a dummy startup to learn about the role of data in a business.",
     comingSoon: false,
   },
   {
