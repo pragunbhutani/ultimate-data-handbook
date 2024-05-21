@@ -26,7 +26,10 @@
   "---": {
     "type": "separator"
   },
-  "startup-journey": "Startup Data Journey",
-  "core-concepts": "Core Concepts",
+  "orientation": "Orientation",
+  "data-roadmaps": "Data Roadmaps",
+  "----": {
+    "type": "separator"
+  },
   "good-conventions": "Good Conventions"
 }

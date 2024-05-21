@@ -4,15 +4,15 @@ const contents = [
   {
     title: "Startup Data Journey",
     icon: "✨",
-    href: "/startup-journey",
+    href: "/orientation/startup-journey",
     description:
-      "Follow the journey of a dummy startup to learn about the role of data in a business.",
+      "Understand the role of data in a business by following the data journey of a dummy startup.",
     comingSoon: false,
   },
   {
     title: "Core Concepts",
     icon: "🧠",
-    href: "/core-concepts",
+    href: "/orientation/core-concepts",
     description:
       "Understand common terms used in data engineering and data science.",
     comingSoon: false,
