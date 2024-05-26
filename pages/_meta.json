@@ -31,5 +31,9 @@
   "----": {
     "type": "separator"
   },
-  "good-conventions": "Good Conventions"
+  "good-conventions": "Good Conventions",
+  "-----": {
+    "type": "separator"
+  },
+  "coming-next": "Upcoming Content"
 }
