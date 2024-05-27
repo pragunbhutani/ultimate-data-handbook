@@ -1,8 +1,12 @@
 import "../styles/globals.css";
 
+import Intercom from "@intercom/messenger-js-sdk";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function MyApp({ Component, pageProps }) {
+  Intercom({
+    app_id: process.env.NEXT_PUBLIC_INTERCOM_APP_ID,
+  });
   return (
     <div className="">
       <Component {...pageProps} />
