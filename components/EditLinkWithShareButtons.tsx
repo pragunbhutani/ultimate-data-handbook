@@ -14,9 +14,7 @@ import {
 
 export default function EditLinkWithShareButtons() {
   const pathname = usePathname();
-  const { docsRepositoryBase, darkMode, themeSwitch } = useConfig();
-
-  console.log(darkMode);
+  const { docsRepositoryBase } = useConfig();
 
   const iconSettings = {
     size: 32,

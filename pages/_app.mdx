@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import Intercom from "@intercom/messenger-js-sdk";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function MyApp({ Component, pageProps }) {
   Intercom({
@@ -11,6 +12,7 @@ export default function MyApp({ Component, pageProps }) {
     <div className="">
       <Component {...pageProps} />
       <Analytics />
+      <GoogleAnalytics gaId="G-JLRSZJQ7MZ" />
     </div>
   );
 }
