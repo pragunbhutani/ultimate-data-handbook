@@ -1,5 +1,6 @@
 import Footer from "@components/Footer";
 import Logo from "@components/Logo";
+import EditLinkWithShareButtons from "@components/EditLinkWithShareButtons";
 
 import darkIcon from "@public/img/icon-dark.png";
 
@@ -33,6 +34,9 @@ const config: DocsThemeConfig = {
     dark: 70,
   },
   navigation: false,
+  editLink: {
+    component: EditLinkWithShareButtons,
+  },
   useNextSeoProps() {
     return {
       titleTemplate: "%s | Ultimate Data Handbook",
@@ -40,7 +44,7 @@ const config: DocsThemeConfig = {
         "A starter guide to help build data infrastructure and set up data teams.",
       openGraph: {
         type: "website",
-        url: "https://handbook.bottomlinedata.co",
+        url: "https://handbook.pragunbhutani.com",
         title: "The Ultimate Data Handbook",
         description:
           "A starter guide to help build data infrastructure and set up data teams.",
