@@ -1,7 +1,7 @@
 export default function Table({ headings, rows }) {
   return (
-    <div className="rounded-lg p-2 my-6 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-40">
-      <table className="table-auto text-left divide-y divide-gray-500 dark:divide-gray-500">
+    <div className="rounded-lg p-2 my-6 bg-gray-100 dark:bg-gray-800 dark:bg-opacity-40 w-full">
+      <table className="table-auto text-left divide-y divide-gray-500 dark:divide-gray-500 w-full">
         <thead className="">
           <tr className="divide-x divide-gray-300 dark:divide-gray-700">
             {headings.map((heading) => (

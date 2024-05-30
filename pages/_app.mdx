@@ -11,8 +11,9 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <div className="">
       <Component {...pageProps} />
-      <Analytics />
-      <GoogleAnalytics gaId="G-JLRSZJQ7MZ" />
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-JLRSZJQ7MZ" />
+      )}
     </div>
   );
 }

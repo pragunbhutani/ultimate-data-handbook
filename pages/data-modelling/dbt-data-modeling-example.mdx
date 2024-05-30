@@ -1,0 +1,15 @@
+import TableOfContents from "@components/TableOfContents";
+import contents from "./dbt-data-modeling-example/_meta.json";
+
+# Illustration Exercise
+
+In this article, we'll walk through the process of using dbt (Data Build Tool) to create a
+Kimball-style data warehouse for an e-commerce store with a mobile application.
+Our goal is to model data from production tables, transform it into staging tables, and finally
+create facts and dimensions, including slowly changing dimensions.
+
+We will also demonstrate how to use intermediate models to store the results of different stages of the
+ETL (Extract, Transform, Load) process.
+Finally, we'll create a mart layer that aggregates data into Gross Merchandise Value (GMV) and margin metrics.
+
+<TableOfContents contents={contents} />

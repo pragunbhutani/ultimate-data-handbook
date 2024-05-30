@@ -1,7 +1,13 @@
-export default function TableOfContents({ basePath, contents }) {
+"use client";
+
+import { usePathname } from "next/navigation";
+
+export default function TableOfContents({ contents }) {
+  const pathname = usePathname();
+
   const contentList = Object.keys(contents).map((key) => ({
     title: contents[key],
-    href: `${basePath}/${key}`,
+    href: `${pathname}/${key}`,
   }));
 
   return (
