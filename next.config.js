@@ -4,4 +4,14 @@ const withNextra = require("nextra")({
   standalone: true,
 });
 
-module.exports = withNextra();
+module.exports = withNextra({
+  async redirects() {
+    return [
+      {
+        source: "/data-warehousing/dbt-illustrated-exercise",
+        destination: "/data-warehousing/data-modeling-example",
+        permanent: false,
+      },
+    ];
+  },
+});
