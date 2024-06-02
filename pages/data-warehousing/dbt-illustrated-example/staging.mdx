@@ -14,7 +14,9 @@ Let us work through the raw tables in our database and create a staging layer fo
 
 We prefix our table names with `stg_` to indicate that they are staging tables.
 
-## stg_users
+## Create Staging Tables
+
+### stg_users
 
 The columns of our `users` table need the following changes:
 
@@ -55,7 +57,7 @@ select * from renamed
 
 ```
 
-## stg_merchants
+### stg_merchants
 
 The columns of our `merchants` table need the following changes:
 
@@ -93,7 +95,7 @@ renamed as (
 select * from renamed
 ```
 
-## stg_items
+### stg_items
 
 The columns of our `items` table need the following changes:
 
@@ -133,13 +135,14 @@ renamed as (
 select * from renamed
 ```
 
-## stg_promotions
+### stg_promotions
 
 The columns of our `promotions` table need the following changes:
 
 - `promotion_id`
 - `product_id` - The use of the word 'product' is because of legacy reasons. We should rename this to `item_id` to match the `items` table
-- `discount` - Should be renamed to `discount_percentage`
+- `discount` - By default we store the discount percentage as an integer e.g. If we offer 20% discount, this value is 20.
+  We will convert this to a float by dividing by 100 to make it easier to work with. We will also rename it to `discount_percentage_as_float`
 - `created_at`
 - `updated_at`
 
@@ -158,7 +161,7 @@ renamed as (
     select
         promotion_id,
         product_id AS item_id,
-        discount AS discount_percentage,
+        discount / 100 AS discount_percentage_as_float,
         created_at,
         updated_at
 
@@ -170,7 +173,7 @@ renamed as (
 select * from renamed
 ```
 
-## stg_inventory
+### stg_inventory
 
 The columns of our `inventory` table need the following changes:
 
@@ -216,7 +219,7 @@ renamed as (
 select * from renamed
 ```
 
-## stg_orders
+### stg_orders
 
 The columns of our `orders` table need the following changes:
 
@@ -255,7 +258,7 @@ renamed as (
 select * from renamed
 ```
 
-## stg_order_items
+### stg_order_items
 
 The columns of our `order_items` table need the following changes:
 
@@ -294,7 +297,7 @@ renamed as (
 select * from renamed
 ```
 
-## Conclusion
+## Next Steps
 
 In this section, we have created staging tables for each of the raw tables in our database.
 These staging tables are used to clean and rename our columns so that they are consistent and easy to work with.
