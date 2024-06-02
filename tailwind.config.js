@@ -24,6 +24,7 @@ module.exports = {
         "bld-grey": "#787878",
         "bld-eerie-grey": "#272727",
         "bld-azure": "#F2FAFA",
+        "nextra-dark": "#111111",
       },
       maxWidth: {
         "8xl": "92rem",

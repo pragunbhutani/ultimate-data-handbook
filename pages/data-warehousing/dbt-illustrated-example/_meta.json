@@ -1,8 +1,8 @@
 {
-  "source-data": "App and Source Data",
+  "source-data": "Source Data",
   "staging": "Staging Layer",
   "snapshots": "Snapshots",
   "dimensions": "Dimension Tables",
   "facts": "Fact Tables",
-  "marts": "Marts"
+  "conclusion": "Conclusion"
 }

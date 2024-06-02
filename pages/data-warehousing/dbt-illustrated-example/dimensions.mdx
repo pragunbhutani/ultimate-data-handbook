@@ -26,7 +26,9 @@ Our dimension tables follow the following naming convention:
 
 ### dim_users_history
 
-The following dbt model creates a slowly changing dimension table for the `users` table.
+#### Specification
+
+We would like our `dim_users_history` table to have the following columns.
 
 Note that our `user_id` is no longer a primary key in this table.
 This is because since we can now have multiple rows for each user, each row representing a different version of the user's history,
@@ -35,6 +37,24 @@ the `user_id` is no longer unique.
 Instead, we have a `dbt_scd_id` column that acts as the primary key.
 
 We have also added a column called `is_current` that indicates whether a row is the current version of the user.
+
+| Column Name   | Type      | Description                                    |
+| ------------- | --------- | ---------------------------------------------- |
+| dim_users_key | PK        | Primary Key                                    |
+| user_id       | FK        | Foreign Key referencing user_id in users table |
+| user_name     | varchar   | Name of the user                               |
+| user_email    | varchar   | Email address of the user                      |
+| latitude      | float     | Latitude of the user's location                |
+| longitude     | float     | Longitude of the user's location               |
+| created_at    | timestamp | Time when the user was created                 |
+| updated_at    | timestamp | Time when the user was last updated            |
+| valid_from    | timestamp | Time when the record became valid              |
+| valid_to      | timestamp | Time when the record ceased to be valid        |
+| is_current    | boolean   | Indicates whether the record is current        |
+
+#### Model
+
+The following dbt model creates a slowly changing dimension table for the `users` table.
 
 ```sql
 with
@@ -72,6 +92,25 @@ select * from renamed
 ```
 
 ### dim_merchants_history
+
+#### Specification
+
+We would like our `dim_merchants_history` table to have the following columns:
+
+| Column Name       | Type      | Description                                            |
+| ----------------- | --------- | ------------------------------------------------------ |
+| dim_merchants_key | PK        | Primary Key                                            |
+| merchant_id       | FK        | Foreign Key referencing merchant_id in merchants table |
+| merchant_name     | varchar   | Name of the merchant                                   |
+| latitude          | float     | Latitude of the merchant's location                    |
+| longitude         | float     | Longitude of the merchant's location                   |
+| created_at        | timestamp | Time when the merchant was created                     |
+| updated_at        | timestamp | Time when the merchant was last updated                |
+| valid_from        | timestamp | Time when the record became valid                      |
+| valid_to          | timestamp | Time when the record ceased to be valid                |
+| is_current        | boolean   | Indicates whether the record is current                |
+
+#### Model
 
 The following dbt model creates a slowly changing dimension table for the `merchants` table.
 
@@ -111,6 +150,25 @@ select * from renamed
 
 ### dim_items_history
 
+#### Specification
+
+We would like our `dim_items_history` table to have the following columns:
+
+| Column Name    | Type      | Description                                    |
+| -------------- | --------- | ---------------------------------------------- |
+| dim_items_key  | PK        | Primary Key                                    |
+| item_id        | FK        | Foreign Key referencing item_id in items table |
+| item_name      | varchar   | Name of the item                               |
+| item_category  | varchar   | Category of the item                           |
+| base_price_usd | float     | Base price of the item in USD                  |
+| created_at     | timestamp | Time when the item was created                 |
+| updated_at     | timestamp | Time when the item was last updated            |
+| valid_from     | timestamp | Time when the record became valid              |
+| valid_to       | timestamp | Time when the record ceased to be valid        |
+| is_current     | boolean   | Indicates whether the record is current        |
+
+#### Model
+
 The following dbt model creates a slowly changing dimension table for the `items` table.
 
 ```sql
@@ -148,6 +206,22 @@ select * from renamed
 ```
 
 ### dim_promotions_history
+
+#### Specification
+
+We would like our `dim_promotions_history` table to have the following columns:
+
+| Column Name                  | Type      | Description                                              |
+| ---------------------------- | --------- | -------------------------------------------------------- |
+| dim_promotions_key           | PK        | Primary Key                                              |
+| promotion_id                 | FK        | Foreign Key referencing promotion_id in promotions table |
+| item_id                      | FK        | Foreign Key referencing item_id in items table           |
+| discount_percentage_as_float | float     | Percentage discount applied to the item                  |
+| created_at                   | timestamp | Time when the promotion was created                      |
+| updated_at                   | timestamp | Time when the promotion was last updated                 |
+| valid_from                   | timestamp | Time when the record became valid                        |
+| valid_to                     | timestamp | Time when the record ceased to be valid                  |
+| is_current                   | boolean   | Indicates whether the record is current                  |
 
 The following dbt model creates a slowly changing dimension table for the `promotions` table.
 

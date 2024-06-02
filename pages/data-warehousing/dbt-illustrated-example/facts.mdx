@@ -361,14 +361,16 @@ final as (
 select * from final
 ```
 
-## Conclusion
+## Next Steps
 
 We have now created the fact tables for our e-commerce data warehouse.
 These tables contain the numerical data that represents the business processes of an organization.
 
-The `fct_order_items` table contains information about the items in each order and the `fct_orders` table aggregates this data at the order level.
+The `fct_order_items` table contains information about the items in each order and the
+`fct_orders` table aggregates this data at the order level.
 
-With our facts and dimensions in place, we have a complete star schema data model that can be used for analytics and reporting purposes.
+With our facts and dimensions in place, we have a complete star schema data model that can be
+used for analytics and reporting purposes.
 
-I hope you find this example helpful in understanding how to model fact tables in a data warehouse!
-If you have any questions or feedback, feel free to reach out to me.
+In the next and final section, we will recap everything we have done so far and look at an
+example of creating a mart table that aggregates data into Gross Merchandise Value (GMV) and margin metrics.

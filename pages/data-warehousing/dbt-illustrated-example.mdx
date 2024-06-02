@@ -1,7 +1,14 @@
 import TableOfContents from "@components/TableOfContents";
+import InformationBox from "@components/InformationBox";
+
 import contents from "./dbt-illustrated-example/_meta.json";
 
-# Illustration Exercise
+# dbt Illustrated Example
+
+<InformationBox type="info">
+  I'm working on creating a github repository with all the code for this
+  example. Please check back soon!
+</InformationBox>
 
 In this article, we'll walk through the process of using dbt (Data Build Tool) to create a
 Kimball-style data warehouse for an e-commerce store with a mobile application.
@@ -11,5 +18,7 @@ create facts and dimensions, including slowly changing dimensions.
 We will also demonstrate how to use intermediate models to store the results of different stages of the
 ETL (Extract, Transform, Load) process.
 Finally, we'll create a mart layer that aggregates data into Gross Merchandise Value (GMV) and margin metrics.
+
+Please read the following sections in order:
 
 <TableOfContents contents={contents} />
