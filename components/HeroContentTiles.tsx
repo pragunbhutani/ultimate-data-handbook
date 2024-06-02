@@ -20,18 +20,18 @@ const contents = [
   {
     title: "Good Conventions",
     icon: "👌",
-    href: "/good-conventions",
+    href: "/data-warehousing/good-conventions",
     description:
       "Design your data so it is easy for humans and LLMs to understand.",
     comingSoon: false,
   },
   {
-    title: "Managing Data Teams",
-    icon: "💼",
-    href: "#",
+    title: "Data Modeling Example",
+    icon: "🏗️",
+    href: "/data-warehousing/data-modeling-example",
     description:
-      "Product and Engineering Management to help you build the right things and build things right.",
-    comingSoon: true,
+      "A step-by-step guide to building a data warehouse for a dummy startup using dbt.",
+    comingSoon: false,
   },
 ];
 
