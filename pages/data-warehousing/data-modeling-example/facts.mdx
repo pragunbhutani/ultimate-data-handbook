@@ -235,8 +235,11 @@ final as (
     select
         *,
 
-        base_unit_selling_price_usd * (1 - discount_percentage_as_float) as effective_unit_selling_price_usd,
-        landed_unit_cost_price_usd - effective_unit_selling_price_usd as unit_margin_usd,
+        base_unit_selling_price_usd * (1 - discount_percentage_as_float)
+        as effective_unit_selling_price_usd,
+
+        landed_unit_cost_price_usd - effective_unit_selling_price_usd
+        as unit_margin_usd,
 
         quantity * effective_unit_selling_price_usd as total_selling_price_usd,
         quantity * landed_unit_cost_price_usd as total_cost_price_usd,
