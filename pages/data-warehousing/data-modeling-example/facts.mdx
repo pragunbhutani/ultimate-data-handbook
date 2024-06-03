@@ -139,13 +139,13 @@ daily_summary as (
         quantity_acquired * unit_cost_usd as total_cost_usd,
 
         sum(quantity_acquired) over (
-          partition by merchant_id, item_id
-          order by report_date
+            partition by merchant_id, item_id
+            order by report_date
         ) as cumulative_quantity_acquired,
 
         sum(total_cost_usd) over (
-          partition by merchant_id, item_id
-          order by report_date
+            partition by merchant_id, item_id
+            order by report_date
         ) as cumulative_acquisition_cost_usd,
 
         cumulative_acquisition_cost_usd / cumulative_quantity_acquired as landed_unit_cost_usd
