@@ -1,18 +1,30 @@
+import InformationBox from "@components/InformationBox";
+
 # Staging
 
 In the previous section, we listed the raw tables that we have in our database.
 Every data modeling journey begins with similar raw tables.
 
 These tables contain the data that is needed for your application to function.
-Such tables often contain a lot of irregularities and inconsistencies in the way data is stored or represented.
+Such tables often contain a lot of irregularities and inconsistencies in the way data is stored or
+represented.
 This irregularities are a result of the way data is collected and stored in the source systems.
 
-This is where the staging layer comes in. The staging layer is used to clean and rename our columns so that they are consistent and easy to work with.
-This layer doesn't contain any transformations or business logic, it's just a copy of the raw tables with some cleaning and renaming.
+This is where the staging layer comes in. The staging layer is used to clean and rename our columns so that
+they are consistent and easy to work with.
+This layer doesn't contain any transformations or business logic, it's just a copy of the raw tables
+with some cleaning and renaming.
 
 Let us work through the raw tables in our database and create a staging layer for each of them.
 
 We prefix our table names with `stg_` to indicate that they are staging tables.
+
+<InformationBox type="info">
+
+You can find all the code for creating these staging tables in the `models/staging/product` directory
+of the [example-dbt-project](https://github.com/pragunbhutani/example-dbt-project/tree/main/models/staging/product).
+
+</InformationBox>
 
 ## Create Staging Tables
 

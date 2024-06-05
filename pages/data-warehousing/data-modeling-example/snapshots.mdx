@@ -77,14 +77,21 @@ Here's an example of a snapshot table for the previous example:
 
 ## Creating Snapshots
 
-Let us now create snapshots of our staging tables. Snapshot tables are named with the prefix `snapshot_`
+Let us now create snapshots of our staging tables. Snapshot tables are named with the prefix `snap_`
 followed by the name of the model being snapshotted.
-For example, the snapshot table for the `stg_users` table would be named `snapshot_stg_users`.
+For example, the snapshot table for the `stg_users` table would be named `snap_stg_users`.
+
+<InformationBox type="info">
+
+You can find all the code for creating these snapshots in the `snapshots/` directory
+of the [example-dbt-project](https://github.com/pragunbhutani/example-dbt-project/tree/main/snapshots/).
+
+</InformationBox>
 
 ### Users
 
 ```sql
-{% snapshot snapshot_stg_users %}
+{% snapshot snap_stg_users %}
 
 {{
     config(
@@ -103,7 +110,7 @@ select * from {{ ref('stg_users') }}
 ### Merchants
 
 ```sql
-{% snapshot snapshot_stg_merchants %}
+{% snapshot snap_stg_merchants %}
 
 {{
     config(
@@ -122,7 +129,7 @@ select * from {{ ref('stg_merchants') }}
 ### Items
 
 ```sql
-{% snapshot snapshot_stg_items %}
+{% snapshot snap_stg_items %}
 
 {{
     config(
@@ -141,7 +148,7 @@ select * from {{ ref('stg_items') }}
 ### Promotions
 
 ```sql
-{% snapshot snapshot_stg_promotions %}
+{% snapshot snap_stg_promotions %}
 
 {{
     config(

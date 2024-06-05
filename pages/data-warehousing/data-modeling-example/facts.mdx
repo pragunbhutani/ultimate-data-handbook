@@ -1,4 +1,5 @@
 import Table from "@components/Table";
+import InformationBox from "@components/InformationBox";
 
 # Facts
 
@@ -19,6 +20,13 @@ In our e-commerce example, we will create the following fact tables:
 
 We will first create the `fct_order_items` table since it is a more granular version of `fct_orders`.
 We will then aggregate this table to create the `fct_orders` table.
+
+<InformationBox type="info">
+
+You can find all the code for creating these fact tables in the `models/core/facts` directory
+of the [example-dbt-project](https://github.com/pragunbhutani/example-dbt-project/tree/main/models/core/facts).
+
+</InformationBox>
 
 ## Model: fct_order_items
 
