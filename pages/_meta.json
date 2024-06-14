@@ -28,11 +28,12 @@
   },
   "orientation": "Orientation",
   "data-roadmaps": "Data Roadmaps",
-  "----": {
+  "-----": {
     "type": "separator"
   },
   "data-warehousing": "Data Warehousing",
-  "-----": {
+  "product-analytics": "Product Analytics",
+  "------": {
     "type": "separator"
   },
   "coming-next": "Upcoming Content"
