@@ -17,7 +17,6 @@ The key challenges at this stage are:
 
 - Acquiring your first customers
 - Getting the customers to engage with and consider your products or services
-- Understanding the needs and preferences of your customers
 - Converting the users into paying customers or subscribers
 - Retaining the customers and keeping them engaged with your product
 
@@ -61,13 +60,52 @@ The guiding principle here is to understand the value that your product is deliv
 In case of an e-commerce product, this could be the number of purchases and the average order value.
 
 In case of a subscription product, once a user has converted, the revenue is largely in the form of recurring revenue.
-For users who are already subscribed, you should track if
+For users who are already subscribed, you should track if they are renewing their subscriptions and if they are upgrading to higher tiers.
 
-### Retention Metrics
+## Todo List
 
-## Tools Required
+- Set up Google Analytics to track the number of visitors to your website and the sources of traffic
+- Set up a consumer data platform to receive data from your website and other sources
+- Set up event tracking to track your signup funnel and the onboarding process
+- Set up event tracking to track the key actions that indicate user engagement with your product
+- (Optional) Set up a product analytics visualization tool to visualize the data from your consumer data platform
 
-- Google Analytics
-- Marketing Attribution Tools
-- Consumer Data Platforms
-- Product Analytics Visualization Tools
+## Suggested Tools
+
+Please note that these views are my own and not endorsed by the respective companies.
+Remember to do your own research before choosing a tool.
+
+### Google Analytics
+
+Google Analytics is useful for tracking the number of visitors to your website and the sources of traffic.
+It's a good general purpose tool for tracking the top of your acquisition funnel.
+
+In the early stages, you can also use Google Analytics for marketing attribution and tracking the performance
+of your marketing campaigns, however, as you scale, you may need more advanced tools for this purpose.
+
+### Consumer Data Platform
+
+A consumer data platform can help you collect data from your website and other sources
+and route it to your data warehouse or other tools for analysis, visualization, and activation.
+
+Here are two popular consumer data platforms:
+
+- [Segment](https://segment.com/) Segment is the incumbent in this space and has a large number of integrations with other tools.
+- [RudderStack](https://rudderstack.com/): RudderStack is an open-source alternative to Segment that you can host on your own infrastructure.
+  They also have a managed cloud offering, which may cost less than Segment for high volumes of data.
+
+As of writing this guide, I recommend using RudderStack over Segment because it is more cost-effective for high volumes of data.
+
+### Product Analytics Visualization
+
+A product analytics visualization tool can help you visualize the data from your consumer data platform with a
+point and click interface. This can be useful for creating dashboards for your team or for sharing data with other stakeholders
+without needing to write SQL queries.
+
+Here are some popular product analytics visualization tools:
+
+- [Amplitude](https://amplitude.com/): Amplitude is the incumbent in this space.
+- [PostHog](https://posthog.com/): PostHog is a new open-source alternative to Amplitude that you can host on your own infrastructure.
+  They also have a managed cloud offering, which may cost less than Amplitude for high volumes of data.
+
+I'm currently a fan of PostHog because they've been developing features at a rapid pace and I love the direction they're heading in.
