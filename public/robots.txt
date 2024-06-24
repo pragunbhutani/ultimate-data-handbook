@@ -1,5 +1,9 @@
-User-Agent: *
+# *
+User-agent: *
 Allow: /
-Disallow: /private/
 
+# Host
+Host: https://handbook.pragunbhutani.com
+
+# Sitemaps
 Sitemap: https://handbook.pragunbhutani.com/sitemap.xml
